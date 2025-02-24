@@ -132,44 +132,15 @@ select, input[type="checkbox"] {
   font-size: 1rem;
 }
 
-/* Positioning the AI controls to the right */
-@media (max-width: 768px) {
-  .container {
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-  }
-
-  .reset-game, .changePlayer {
-    width: 100%;
-    font-size: 1.1rem;
-  }
-
-  .ai-controls {
-    width: 100%;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-}
-
 /* Footer or AI info */
 .AI-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #34495e;
-  color: #ecf0f1;
-  padding: 10px;
-  border-radius: 8px;
+  margin-top: 50px;
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 h6 {
