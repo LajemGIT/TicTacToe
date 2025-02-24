@@ -16,6 +16,7 @@ body {
   padding: 20px;
   flex-direction: column;
   text-align: center;
+  overflow: scroll;
 }
 
 /* Main container for game and AI settings */
