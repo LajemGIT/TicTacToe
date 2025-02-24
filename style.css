@@ -139,7 +139,9 @@ select, input[type="checkbox"] {
   }
 }
 .AI-info {
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 20px;
   right: 20px;
   background: #34495e;
