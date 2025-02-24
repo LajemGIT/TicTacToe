@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <button class="changePlayer">Current Player: X</button>
+  <div class="container">
+    
+    <!-- Main Game Section -->
+    <div class="main-game">
+      <button class="changePlayer" id="changePlayerBtn">Starting Player: X</button>
 
-    <div class="grid">
+      <div class="grid">
         <button id="b0"></button>
         <button id="b1"></button>
         <button id="b2"></button>
@@ -20,13 +24,36 @@
         <button id="b6"></button>
         <button id="b7"></button>
         <button id="b8"></button>
+      </div>
+
+      <p id="result"></p>
+
+      <button class="js-reset-game reset-game">Reset Game</button>
     </div>
 
-    <p id="result"></p>
+    <!-- AI Controls Sidebar -->
+    <div class="ai-controls">
+      <h2>AI Settings</h2>
+      
+      <label for="ai-level">AI Difficulty:</label>
+      <select id="ai-level">
+        <option value="min">Min (Random)</option>
+        <option value="normal">Normal (Smart)</option>
+        <option value="max">Max (Unbeatable)</option>
+      </select>
 
-    <button class="js-reset-game reset-game">Reset Game</button>
+      <label for="ai-toggle">Play with AI:</label>
+      <input type="checkbox" id="ai-toggle" checked />
+    </div>
 
-    <script src="script.js"></script>
+  </div>
 
+  <div class="AI-info">
+    <h6>AI Info</h6>
+    <p class="ai-version">TobboAI:TicTacToe:1.0.0</p>
+    <button class="learnMoreBtn" onclick="window.location.href='tobboAI-info.html'">Learn More</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
